@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelrhman Saeed | Videographer & Video Editor</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Syne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Syne"', 'sans-serif'],
+                    },
+                    colors: {
+                        cinema: {
+                            bg: '#0a0a0c',
+                            surface: '#131318',
+                            card: '#18181f',
+                            border: '#272732',
+                            amber: '#f59e0b',
+                            indigo: '#6366f1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0a0c;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(10, 10, 12, 0.78);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .hero-glow {
+            background: radial-gradient(circle at 20% 25%, rgba(99, 102, 241, 0.16), transparent 45%),
+                        radial-gradient(circle at 80% 30%, rgba(245, 158, 11, 0.14), transparent 45%);
+        }
+        .video-card:hover .play-pulse {
+            transform: scale(1.12);
+            box-shadow: 0 0 28px rgba(245, 158, 11, 0.55);
+        }
+        .film-strip-pattern {
+            background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-amber-500/30 selection:text-amber-300">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 inset-x-0 z-50 glass-nav">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#top" class="flex items-center gap-2.5 group">
+                <span class="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-500 to-indigo-600 flex items-center justify-center text-white font-display font-bold text-lg shadow-lg shadow-amber-500/10">
+                    AS
+                </span>
+                <span class="font-display font-bold text-base sm:text-lg tracking-tight text-white group-hover:text-amber-400 transition">
+                    Abdelrhman<span class="text-amber-500">.</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+                <a href="#work" class="hover:text-amber-400 transition">Portfolio</a>
+                <a href="#experience" class="hover:text-amber-400 transition">Experience</a>
+                <a href="#skills" class="hover:text-amber-400 transition">Skills</a>
+                <a href="#education" class="hover:text-amber-400 transition">Education</a>
+            </nav>
+
+            <!-- Quick CTA & Mobile Menu Button -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/201096028328" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-gray-950 font-semibold text-xs sm:text-sm transition shadow-md shadow-amber-500/20">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Let's Talk</span>
+                </a>
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-xl bg-cinema-card border border-cinema-border text-gray-200 hover:text-amber-400">
+                    <i class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-cinema-border bg-cinema-surface/95 px-4 pt-3 pb-5 space-y-2">
+            <a href="#work" class="mobile-link block px-3 py-2.5 rounded-xl text-sm font-medium text-gray-200 hover:bg-cinema-card hover:text-amber-400">Portfolio Reels</a>
+            <a href="#experience" class="mobile-link block px-3 py-2.5 rounded-xl text-sm font-medium text-gray-200 hover:bg-cinema-card hover:text-amber-400">Work Experience</a>
+            <a href="#skills" class="mobile-link block px-3 py-2.5 rounded-xl text-sm font-medium text-gray-200 hover:bg-cinema-card hover:text-amber-400">Core Skills</a>
+            <a href="#education" class="mobile-link block px-3 py-2.5 rounded-xl text-sm font-medium text-gray-200 hover:bg-cinema-card hover:text-amber-400">Education & Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="top" class="relative pt-28 pb-20 sm:pt-36 sm:pb-28 hero-glow film-strip-pattern border-b border-cinema-border/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <!-- Availability Tag -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cinema-card/90 border border-cinema-border text-xs font-medium text-amber-400 mb-6">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    <span>Videographer & Video Editor</span>
+                </div>
+
+                <!-- Full Name -->
+                <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-white leading-[1.12]">
+                    Abdelrhman Saeed
+                </h1>
+
+                <!-- Education / Academic Degree directly under the name -->
+                <p class="mt-3 text-base sm:text-xl font-semibold bg-gradient-to-r from-amber-400 via-amber-200 to-indigo-400 bg-clip-text text-transparent">
+                    Bachelor of Applied Arts – Media and Advertising Department
+                </p>
+
+                <!-- Professional Summary -->
+                <p class="mt-6 text-gray-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                    Dynamic Video Editor &amp; Videographer with extensive experience at <span class="text-white font-medium">Al-Abd Bakery Equipment</span>, <span class="text-white font-medium">Dopamen</span>, <span class="text-white font-medium">Eng. Ramy Nagah</span>, and <span class="text-white font-medium">City App</span>. Adept in enhancing video quality, cinematography, color correction, audio engineering, and crafting compelling visual narratives optimized for diverse digital platforms.
+                </p>
+
+                <!-- Direct Contact Action Buttons (Phone, WhatsApp, Email) -->
+                <div class="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
+                    <a href="tel:+201096028328"
+                       class="inline-flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-white text-gray-950 hover:bg-amber-400 font-semibold text-sm transition shadow-lg">
+                        <i class="fa-solid fa-phone text-amber-600"></i>
+                        <span>+20 109 602 8328</span>
+                    </a>
+
+                    <a href="https://wa.me/201096028328" target="_blank" rel="noopener noreferrer"
+                       class="inline-flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 border border-emerald-500/30 font-semibold text-sm transition">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp</span>
+                    </a>
+
+                    <a href="mailto:qqqqq9552@gmail.com"
+                       class="inline-flex items-center gap-2.5 px-5 py-3.5 rounded-2xl bg-cinema-card hover:bg-cinema-border/70 text-gray-200 border border-cinema-border font-medium text-sm transition">
+                        <i class="fa-solid fa-envelope text-indigo-400"></i>
+                        <span>qqqqq9552@gmail.com</span>
+                    </a>
+                </div>
+
+                <!-- Quick Stats Bar -->
+                <div class="mt-12 pt-8 border-t border-cinema-border/80 grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-xl">
+                    <div>
+                        <p class="font-display font-bold text-2xl sm:text-3xl text-white">4+</p>
+                        <p class="text-xs sm:text-sm text-gray-400 mt-1">Brands &amp; Companies</p>
+                    </div>
+                    <div>
+                        <p class="font-display font-bold text-2xl sm:text-3xl text-amber-400">Full-Cycle</p>
+                        <p class="text-xs sm:text-sm text-gray-400 mt-1">Shooting &amp; Post-Production</p>
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        <p class="font-display font-bold text-2xl sm:text-3xl text-indigo-400">2025</p>
+                        <p class="text-xs sm:text-sm text-gray-400 mt-1">Applied Arts Graduate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Portfolio / Featured Works Section -->
+    <section id="work" class="py-20 sm:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header & Filter Controls -->
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Selected Reels &amp; Edits</span>
+                    <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mt-2">Featured Video Portfolio</h2>
+                    <p class="text-gray-400 text-sm sm:text-base mt-2 max-w-xl">
+                        Explore commercial edits, social media reels, and cinematography projects. Click any card to watch directly on its platform.
+                    </p>
+                </div>
+
+                <!-- Interactive Filter Tabs -->
+                <div class="inline-flex p-1.5 rounded-2xl bg-cinema-surface border border-cinema-border self-start">
+                    <button data-filter="all" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-amber-500 text-gray-950 transition">
+                        All Works (6)
+                    </button>
+                    <button data-filter="facebook" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-gray-300 hover:text-white transition">
+                        Facebook (4)
+                    </button>
+                    <button data-filter="instagram" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-gray-300 hover:text-white transition">
+                        Instagram (2)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Video Showcase Grid -->
+            <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Card 1: Facebook Reel -->
+                <a href="https://www.facebook.com/share/r/1Co3aHBiqw/" target="_blank" rel="noopener noreferrer"
+                   data-platform="facebook"
+                   class="video-card group block rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative aspect-[16/10] bg-gradient-to-br from-indigo-950 via-cinema-surface to-amber-950/60 p-5 flex flex-col justify-between overflow-hidden">
+                        <!-- Decorative Cinema Timecode & Frame -->
+                        <div class="flex items-center justify-between z-10">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600/20 border border-blue-500/30 text-blue-300 text-xs font-semibold">
+                                <i class="fa-brands fa-facebook"></i> Facebook Reel
+                            </span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-black/40 px-2 py-0.5 rounded-md">00:01:15:08</span>
+                        </div>
+
+                        <!-- Center Play Button -->
+                        <div class="my-auto mx-auto z-10">
+                            <div class="play-pulse w-14 h-14 rounded-full bg-amber-500 text-gray-950 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                            </div>
+                        </div>
+
+                        <!-- Bottom Tag -->
+                        <div class="flex items-center justify-between text-xs text-gray-300 z-10">
+                            <span class="font-medium">Commercial &amp; Social Cut</span>
+                            <span class="text-amber-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">
+                                Watch <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Project 01</div>
+                        <h3 class="font-display font-bold text-lg text-white mt-1 group-hover:text-amber-300 transition">Commercial &amp; Social Reel</h3>
+                        <p class="text-sm text-gray-400 mt-1.5 line-clamp-2">Dynamic pacing, clean transitions, and color-graded storytelling crafted for high social engagement.</p>
+                    </div>
+                </a>
+
+                <!-- Card 2: Facebook Reel -->
+                <a href="https://www.facebook.com/share/r/1GP46tQcbh/" target="_blank" rel="noopener noreferrer"
+                   data-platform="facebook"
+                   class="video-card group block rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative aspect-[16/10] bg-gradient-to-br from-slate-900 via-indigo-950/80 to-purple-950/60 p-5 flex flex-col justify-between overflow-hidden">
+                        <div class="flex items-center justify-between z-10">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600/20 border border-blue-500/30 text-blue-300 text-xs font-semibold">
+                                <i class="fa-brands fa-facebook"></i> Facebook Reel
+                            </span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-black/40 px-2 py-0.5 rounded-md">4K • 60FPS</span>
+                        </div>
+
+                        <div class="my-auto mx-auto z-10">
+                            <div class="play-pulse w-14 h-14 rounded-full bg-amber-500 text-gray-950 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-xs text-gray-300 z-10">
+                            <span class="font-medium">Brand Promotional Edit</span>
+                            <span class="text-amber-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">
+                                Watch <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Project 02</div>
+                        <h3 class="font-display font-bold text-lg text-white mt-1 group-hover:text-amber-300 transition">Brand &amp; Promo Showcase</h3>
+                        <p class="text-sm text-gray-400 mt-1.5 line-clamp-2">Rhythmic montage, sound design enhancement, and visual graphics highlighting brand identity.</p>
+                    </div>
+                </a>
+
+                <!-- Card 3: Facebook Reel -->
+                <a href="https://www.facebook.com/share/r/1MDYrfZ7YX/" target="_blank" rel="noopener noreferrer"
+                   data-platform="facebook"
+                   class="video-card group block rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative aspect-[16/10] bg-gradient-to-br from-amber-950/70 via-cinema-surface to-stone-900 p-5 flex flex-col justify-between overflow-hidden">
+                        <div class="flex items-center justify-between z-10">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600/20 border border-blue-500/30 text-blue-300 text-xs font-semibold">
+                                <i class="fa-brands fa-facebook"></i> Facebook Reel
+                            </span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-black/40 px-2 py-0.5 rounded-md">REC • RAW</span>
+                        </div>
+
+                        <div class="my-auto mx-auto z-10">
+                            <div class="play-pulse w-14 h-14 rounded-full bg-amber-500 text-gray-950 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-xs text-gray-300 z-10">
+                            <span class="font-medium">Visual Storytelling</span>
+                            <span class="text-amber-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">
+                                Watch <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Project 03</div>
+                        <h3 class="font-display font-bold text-lg text-white mt-1 group-hover:text-amber-300 transition">Creative Visual Storytelling</h3>
+                        <p class="text-sm text-gray-400 mt-1.5 line-clamp-2">Carefully selected shots and smooth narrative flow built to capture viewer retention from second one.</p>
+                    </div>
+                </a>
+
+                <!-- Card 4: Instagram Reel -->
+                <a href="https://www.instagram.com/reel/DY_sPCUoDMJ/?obrf=dGt1amZ0dTFhZzQ0" target="_blank" rel="noopener noreferrer"
+                   data-platform="instagram"
+                   class="video-card group block rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative aspect-[16/10] bg-gradient-to-br from-pink-950/70 via-purple-950/70 to-amber-950/60 p-5 flex flex-col justify-between overflow-hidden">
+                        <div class="flex items-center justify-between z-10">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-600/20 border border-pink-500/30 text-pink-300 text-xs font-semibold">
+                                <i class="fa-brands fa-instagram"></i> Instagram Reel
+                            </span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-black/40 px-2 py-0.5 rounded-md">9:16 VERTICAL</span>
+                        </div>
+
+                        <div class="my-auto mx-auto z-10">
+                            <div class="play-pulse w-14 h-14 rounded-full bg-amber-500 text-gray-950 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-xs text-gray-300 z-10">
+                            <span class="font-medium">Lifestyle &amp; Atmosphere</span>
+                            <span class="text-amber-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">
+                                Watch <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xs font-semibold text-pink-400 uppercase tracking-wider">Project 04</div>
+                        <h3 class="font-display font-bold text-lg text-white mt-1 group-hover:text-amber-300 transition">Dynamic Lifestyle &amp; Vibe Reel</h3>
+                        <p class="text-sm text-gray-400 mt-1.5 line-clamp-2">Cinematic camera angles paired with beat-synced cuts tailored for Instagram Reels audiences.</p>
+                    </div>
+                </a>
+
+                <!-- Card 5: Instagram Reel -->
+                <a href="https://www.instagram.com/reel/DY1Idt9NdFT/?srtk=Z21qYWRpcDR1b2dl" target="_blank" rel="noopener noreferrer"
+                   data-platform="instagram"
+                   class="video-card group block rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative aspect-[16/10] bg-gradient-to-br from-fuchsia-950/60 via-cinema-surface to-indigo-950/80 p-5 flex flex-col justify-between overflow-hidden">
+                        <div class="flex items-center justify-between z-10">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-pink-600/20 border border-pink-500/30 text-pink-300 text-xs font-semibold">
+                                <i class="fa-brands fa-instagram"></i> Instagram Reel
+                            </span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-black/40 px-2 py-0.5 rounded-md">COLOR GRADED</span>
+                        </div>
+
+                        <div class="my-auto mx-auto z-10">
+                            <div class="play-pulse w-14 h-14 rounded-full bg-amber-500 text-gray-950 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-xs text-gray-300 z-10">
+                            <span class="font-medium">Cinematography &amp; Grade</span>
+                            <span class="text-amber-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">
+                                Watch <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xs font-semibold text-pink-400 uppercase tracking-wider">Project 05</div>
+                        <h3 class="font-display font-bold text-lg text-white mt-1 group-hover:text-amber-300 transition">Cinematography &amp; Color Showcase</h3>
+                        <p class="text-sm text-gray-400 mt-1.5 line-clamp-2">Rich color correction, crisp audio mixing, and visual polish designed to elevate brand perception.</p>
+                    </div>
+                </a>
+
+                <!-- Card 6: Facebook Reel -->
+                <a href="https://www.facebook.com/share/r/1DSVMvuSjZ/" target="_blank" rel="noopener noreferrer"
+                   data-platform="facebook"
+                   class="video-card group block rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/50 overflow-hidden transition-all duration-300 hover:-translate-y-1">
+                    <div class="relative aspect-[16/10] bg-gradient-to-br from-cyan-950/60 via-cinema-surface to-indigo-950/70 p-5 flex flex-col justify-between overflow-hidden">
+                        <div class="flex items-center justify-between z-10">
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-600/20 border border-blue-500/30 text-blue-300 text-xs font-semibold">
+                                <i class="fa-brands fa-facebook"></i> Facebook Reel
+                            </span>
+                            <span class="text-[11px] font-mono text-gray-400 bg-black/40 px-2 py-0.5 rounded-md">HD • MASTER</span>
+                        </div>
+
+                        <div class="my-auto mx-auto z-10">
+                            <div class="play-pulse w-14 h-14 rounded-full bg-amber-500 text-gray-950 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-solid fa-play text-lg ml-0.5"></i>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-between text-xs text-gray-300 z-10">
+                            <span class="font-medium">High-Impact Social Edit</span>
+                            <span class="text-amber-400 group-hover:translate-x-1 transition inline-flex items-center gap-1">
+                                Watch <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-5">
+                        <div class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Project 06</div>
+                        <h3 class="font-display font-bold text-lg text-white mt-1 group-hover:text-amber-300 transition">High-Engagement Social Cut</h3>
+                        <p class="text-sm text-gray-400 mt-1.5 line-clamp-2">Fast-paced commercial storytelling engineered to maximize reach, shares, and audience engagement.</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Timeline Section -->
+    <section id="experience" class="py-20 sm:py-24 bg-cinema-surface/60 border-y border-cinema-border/70">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Career Journey</span>
+                <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mt-2">Work Experience</h2>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Role 1: Al-Abd Bakery Equipment -->
+                <div class="p-6 sm:p-8 rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/40 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="font-display font-bold text-xl sm:text-2xl text-white">Video Editor</h3>
+                            <p class="text-amber-400 font-semibold text-base mt-0.5">Al-Abd Bakery Equipment</p>
+                        </div>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cinema-surface border border-cinema-border text-xs font-semibold text-gray-300 self-start">
+                            <i class="fa-regular fa-calendar text-amber-400"></i> Jun 2026 – Aug 2026
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm sm:text-base text-gray-300 leading-relaxed list-disc list-inside marker:text-amber-400">
+                        <li>Monitored production schedules and coordinated workflows across designers and production managers.</li>
+                        <li>Enhanced final video quality through precision color correction and professional audio adjustments.</li>
+                        <li>Encoded and mastered videos for streaming and social platforms, optimizing for multiple screen sizes and resolutions.</li>
+                        <li>Incorporated visual effects and motion graphics to reinforce brand messaging and storytelling.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2: Dopamen Cafe -->
+                <div class="p-6 sm:p-8 rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/40 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="font-display font-bold text-xl sm:text-2xl text-white">Videographer &amp; Video Editor</h3>
+                            <p class="text-amber-400 font-semibold text-base mt-0.5">Dopamen Cafe</p>
+                        </div>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cinema-surface border border-cinema-border text-xs font-semibold text-gray-300 self-start">
+                            <i class="fa-regular fa-calendar text-amber-400"></i> Jan 2026 – Jul 2026
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm sm:text-base text-gray-300 leading-relaxed list-disc list-inside marker:text-amber-400">
+                        <li>Directed on-site filming and post-production, selecting the strongest angles and shots to build smooth, logical stories.</li>
+                        <li>Pitched creative video concepts that boosted viewership and audience engagement across social channels.</li>
+                        <li>Provided technical support during shoots to ensure maximum post-production efficiency while managing multiple deadlines.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 3: Eng. Ramy Nagah -->
+                <div class="p-6 sm:p-8 rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/40 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="font-display font-bold text-xl sm:text-2xl text-white">Videographer &amp; Video Editor</h3>
+                            <p class="text-amber-400 font-semibold text-base mt-0.5">Eng. Ramy Nagah (Finishing &amp; Architecture)</p>
+                        </div>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cinema-surface border border-cinema-border text-xs font-semibold text-gray-300 self-start">
+                            <i class="fa-regular fa-calendar text-amber-400"></i> Jan 2025 – Feb 2026
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm sm:text-base text-gray-300 leading-relaxed list-disc list-inside marker:text-amber-400">
+                        <li>Managed end-to-end video production from pre-production planning and shooting to color-graded final edits.</li>
+                        <li>Showcased interior finishing and architectural projects with high visual precision, adhering strictly to deadlines and budgets.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 4: City App -->
+                <div class="p-6 sm:p-8 rounded-3xl bg-cinema-card border border-cinema-border hover:border-amber-500/40 transition">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="font-display font-bold text-xl sm:text-2xl text-white">Videographer &amp; Video Editor</h3>
+                            <p class="text-amber-400 font-semibold text-base mt-0.5">City App</p>
+                        </div>
+                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-cinema-surface border border-cinema-border text-xs font-semibold text-indigo-300 self-start">
+                            <i class="fa-solid fa-mobile-screen-button text-indigo-400"></i> Commercial Content
+                        </span>
+                    </div>
+                    <ul class="space-y-2.5 text-sm sm:text-base text-gray-300 leading-relaxed list-disc list-inside marker:text-amber-400">
+                        <li>Filmed and edited promotional and explanatory reels tailored for mobile app user acquisition and digital campaigns.</li>
+                        <li>Combined dynamic cinematography with sharp editing to communicate app features clearly and persuasively.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Skills & Expertise Section -->
+    <section id="skills" class="py-20 sm:py-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Capabilities</span>
+                <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mt-2">Core Skills &amp; Expertise</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-scissors text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Video Editing &amp; Footage Selection</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Narrative pacing &amp; seamless cuts</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-500/15 text-indigo-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-video text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Cinematography &amp; Videography</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Framing, lighting &amp; camera movement</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Color Correction &amp; Grading</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Cinematic tones &amp; visual consistency</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-500/15 text-indigo-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-sliders text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Audio Adjustments &amp; Mixing</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Clarity, SFX &amp; balanced soundscapes</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-layer-group text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Visual Effects &amp; Graphics</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Motion titles &amp; brand overlays</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-500/15 text-indigo-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-check-double text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Quality Assessment &amp; Encoding</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Platform-specific export optimization</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-lightbulb text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Pre-Production &amp; Creative Pitching</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Storyboarding &amp; engagement concepts</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-500/15 text-indigo-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-list-check text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Organizational &amp; Time Management</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Multi-project delivery on strict deadlines</p>
+                    </div>
+                </div>
+
+                <div class="p-5 rounded-2xl bg-cinema-card border border-cinema-border flex items-center gap-4 hover:border-amber-500/40 transition">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center shrink-0">
+                        <i class="fa-solid fa-users text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white text-sm sm:text-base">Teamwork &amp; Adaptability</h3>
+                        <p class="text-xs text-gray-400 mt-0.5">Cross-functional creative collaboration</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Direct Contact Section -->
+    <section id="education" class="py-20 sm:py-24 bg-cinema-surface/80 border-t border-cinema-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Education Card -->
+                <div class="p-7 sm:p-9 rounded-3xl bg-cinema-card border border-cinema-border flex flex-col justify-between">
+                    <div>
+                        <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-indigo-400">
+                            <i class="fa-solid fa-graduation-cap"></i> Academic Background
+                        </span>
+                        <h2 class="font-display font-bold text-2xl sm:text-3xl text-white mt-3">
+                            Bachelor of Applied Arts
+                        </h2>
+                        <p class="text-amber-400 font-semibold text-base sm:text-lg mt-1">
+                            Media and Advertising Arts Department
+                        </p>
+                        <p class="text-gray-400 text-sm mt-2">
+                            Faculty of Applied Arts, Banha • Class of August 2025
+                        </p>
+                        <p class="text-gray-300 text-sm sm:text-base mt-5 leading-relaxed">
+                            Specialized in visual communication, commercial photography, advertising production, and multimedia storytelling tailored to serve product and brand positioning.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Direct Contact Card (Phone, WhatsApp, Email only - No address) -->
+                <div class="p-7 sm:p-9 rounded-3xl bg-gradient-to-br from-cinema-card via-cinema-card to-amber-950/20 border border-amber-500/30 flex flex-col justify-between">
+                    <div>
+                        <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-400">
+                            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                        </span>
+                        <h2 class="font-display font-bold text-2xl sm:text-3xl text-white mt-3">
+                            Ready to Create Your Next Video?
+                        </h2>
+                        <p class="text-gray-300 text-sm sm:text-base mt-3 leading-relaxed">
+                            Available for commercial shoots, social media reels, and full-service video editing projects. Reach out directly via phone, WhatsApp, or email.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 space-y-3">
+                        <a href="tel:+201096028328" class="flex items-center justify-between p-4 rounded-2xl bg-cinema-surface hover:bg-cinema-border/60 border border-cinema-border transition group">
+                            <div class="flex items-center gap-3.5">
+                                <span class="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <div>
+                                    <p class="text-xs text-gray-400">Phone / Direct Call</p>
+                                    <p class="text-sm sm:text-base font-semibold text-white group-hover:text-amber-400 transition">+20 109 602 8328</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-amber-400 transition"></i>
+                        </a>
+
+                        <a href="https://wa.me/201096028328" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between p-4 rounded-2xl bg-cinema-surface hover:bg-cinema-border/60 border border-cinema-border transition group">
+                            <div class="flex items-center gap-3.5">
+                                <span class="w-10 h-10 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center">
+                                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                                </span>
+                                <div>
+                                    <p class="text-xs text-gray-400">WhatsApp Chat</p>
+                                    <p class="text-sm sm:text-base font-semibold text-white group-hover:text-emerald-400 transition">Message on WhatsApp</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-emerald-400 transition"></i>
+                        </a>
+
+                        <a href="mailto:qqqqq9552@gmail.com" class="flex items-center justify-between p-4 rounded-2xl bg-cinema-surface hover:bg-cinema-border/60 border border-cinema-border transition group">
+                            <div class="flex items-center gap-3.5">
+                                <span class="w-10 h-10 rounded-xl bg-indigo-500/15 text-indigo-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <div>
+                                    <p class="text-xs text-gray-400">Email Address</p>
+                                    <p class="text-sm sm:text-base font-semibold text-white group-hover:text-indigo-400 transition">qqqqq9552@gmail.com</p>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-arrow-right text-gray-500 group-hover:text-indigo-400 transition"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-cinema-border text-center text-xs sm:text-sm text-gray-500">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>&copy; <span id="year"></span> Abdelrhman Saeed — Videographer &amp; Video Editor. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Set current copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile navigation toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Portfolio category filter (All / Facebook / Instagram)
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const videoCards = document.querySelectorAll('.video-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button styling
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-amber-500', 'text-gray-950');
+                    b.classList.add('text-gray-300');
+                });
+                btn.classList.add('bg-amber-500', 'text-gray-950');
+                btn.classList.remove('text-gray-300');
+
+                const selectedFilter = btn.getAttribute('data-filter');
+
+                videoCards.forEach(card => {
+                    const platform = card.getAttribute('data-platform');
+                    if (selectedFilter === 'all' || platform === selectedFilter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
